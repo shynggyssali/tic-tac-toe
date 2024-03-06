@@ -1,0 +1,43 @@
+body {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 15px;
+}
+
+.board button {
+  width: 150px;
+  height: 150px;
+  font-size: 100px;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.board button:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.result {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  display: none;
+  color: hsl(0, 0%, 0%);
+}
+
+.show-result {
+  display: block;
+}
